@@ -4,9 +4,7 @@
 __author__='TonyZhu'
 
 import re
-# import os
 
-# print(os.getcwd()+'/words.txt')
 def wordStatistics(path):
 	wordDict = {}
 	with open(path,'r') as file:
@@ -21,7 +19,6 @@ def wordStatistics(path):
 						wordDict[_word] = wordCount
 					else:
 						wordDict[_word] = 1
-			# wordListPerLine = line.lower().replace(string.punctuation,'').strip().split(' ')
 	return wordDict
 
 if __name__ == '__main__':
